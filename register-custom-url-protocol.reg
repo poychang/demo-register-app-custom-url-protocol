@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\YourAppProtocol]
+@="URL:Your App Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\YourAppProtocol\DefaultIcon]
+@="\"YourAppName.exe\",1"
+
+[HKEY_CLASSES_ROOT\YourAppProtocol\shell]
+
+[HKEY_CLASSES_ROOT\YourAppProtocol\shell\open]
+
+[HKEY_CLASSES_ROOT\YourAppProtocol\shell\open\command]
+@="\"C:\\YourAppNamePath\\YourAppName.exe\" \"parameter=%1\""

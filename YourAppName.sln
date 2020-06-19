@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourAppName", "YourAppName\YourAppName.csproj", "{D9283A44-25F4-4296-AB5C-DA3919C49DA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D499CA05-EC20-44E1-8808-8EE8B90287C7}"
+	ProjectSection(SolutionItems) = preProject
+		delete-custom-url-protocol.reg = delete-custom-url-protocol.reg
+		README.md = README.md
+		register-custom-url-protocol.reg = register-custom-url-protocol.reg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9283A44-25F4-4296-AB5C-DA3919C49DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9283A44-25F4-4296-AB5C-DA3919C49DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9283A44-25F4-4296-AB5C-DA3919C49DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9283A44-25F4-4296-AB5C-DA3919C49DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4EF4C76-435F-4597-9508-6128D87C06F8}
+	EndGlobalSection
+EndGlobal
