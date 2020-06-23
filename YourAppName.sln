@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D499CA05-E
 		delete-custom-url-protocol.reg = delete-custom-url-protocol.reg
 		README.md = README.md
 		register-custom-url-protocol.reg = register-custom-url-protocol.reg
+		send-data-from-webpage.html = send-data-from-webpage.html
 	EndProjectSection
 EndProject
 Global

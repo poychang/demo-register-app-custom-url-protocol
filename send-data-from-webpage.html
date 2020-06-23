@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data From Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="AppController as appCtrl">
+        <textarea rows="4" cols="50" ng-model="appCtrl.data"></textarea>
+        <p>
+            <a ng-href="yourappprotocol:{{appCtrl.data}}">Send Data to Local App</a>
+        </p>
+        <p>
+            &lt;a ng-href="yourappprotocol:{{appCtrl.data}}"&gt;Send Data to Local App&lt;/a&gt;
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        angular.module('app', [])
+            .config([
+                '$compileProvider',
+                function ($compileProvider) {
+                    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|yourappprotocol):/);
+                }
+            ])
+            .controller('AppController', function () {
+                var vm = this;
+                var paramaters = { key1: 'value1', key2: 'value2' };
+                vm.data = JSON.stringify(paramaters);
+            });
+    </script>
+</body>
+
+</ht
